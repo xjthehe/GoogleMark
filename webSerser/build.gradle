@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.google.server"
+        minSdkVersion 7
+        targetSdkVersion 7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:18.+'
+    implementation files('libs/jetty-client-7.6.0.RC4.jar')
+    implementation files('libs/jetty-continuation-7.6.0.RC4.jar')
+    implementation files('libs/jetty-deploy-7.6.0.RC4.jar')
+    implementation files('libs/jetty-http-7.6.0.RC4.jar')
+    implementation files('libs/jetty-io-7.6.0.RC4.jar')
+    implementation files('libs/jetty-security-7.6.0.RC4.jar')
+    implementation files('libs/jetty-server-7.6.0.RC4.jar')
+    implementation files('libs/jetty-servlet-7.6.0.RC4.jar')
+    implementation files('libs/jetty-util-7.6.0.RC4.jar')
+    implementation files('libs/jetty-webapp-7.6.0.RC4.jar')
+    implementation files('libs/jetty-xml-7.6.0.RC4.jar')
+    implementation files('libs/jstl-1.2.jar')
+    implementation files('libs/servlet-api-2.5.jar')
+}
