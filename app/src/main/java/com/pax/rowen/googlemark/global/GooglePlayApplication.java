@@ -13,7 +13,7 @@ public class GooglePlayApplication extends Application {
     private static Handler handler;
     private static int mainThreadId;
     @Override
-    public void onCreate() {
+    public void onCreate(){
         super.onCreate();
         context=getApplicationContext();
         handler=new Handler();
@@ -23,11 +23,9 @@ public class GooglePlayApplication extends Application {
     public static Context getContext() {
         return context;
     }
-
-    public static void setContext(Context context) {
+    public static void setContext(Context context){
         GooglePlayApplication.context = context;
     }
-
     public static Handler getHandler() {
         return handler;
     }
