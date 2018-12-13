@@ -86,5 +86,6 @@ public  class LoadingPage extends FrameLayout {
 		mEmptyPage
 				.setVisibility(mCurrentState == STATE_LOAD_EMPTY ? View.VISIBLE
 						: View.GONE);
+		//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	}
 }
