@@ -11,6 +11,6 @@ import com.pax.rowen.googlemark.R;
 
 public class BaseActivity extends AppCompatActivity {
 
-
+////////
 
 }

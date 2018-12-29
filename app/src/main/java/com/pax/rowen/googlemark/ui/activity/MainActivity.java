@@ -30,6 +30,28 @@ public class MainActivity extends BaseActivity {
 
           //指针和viewpager关联
           mPagerTab.setViewPager(mViewPager);
+
+
+        //onLoad调用触发地方
+        mPagerTab.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                BaseFragment baseFragment=FragmentFactory.creatFragment(position);
+                //实际还是loadingpage的loaddate.
+                baseFragment.loadDate();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
     }
 
     //pagerAdapter
