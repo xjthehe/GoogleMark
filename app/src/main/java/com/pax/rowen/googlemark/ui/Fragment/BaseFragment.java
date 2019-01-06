@@ -22,7 +22,7 @@ public abstract class BaseFragment extends Fragment {
 //        view.setTextColor(UIUtils.getColor(R.color.colorAccent));
 
 //        LoadingPage loadingPage=new LoadingPage(UIUtils.getContext());
-            ////////////////////////
+        ////////////////////////
 
 
         mLoadingPage=new LoadingPage(UIUtils.getContext()){
