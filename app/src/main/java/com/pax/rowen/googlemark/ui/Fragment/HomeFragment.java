@@ -52,7 +52,11 @@ public class HomeFragment extends BaseFragment {
             return new HomeHolder();
         }
 
-//        @Override
+        @Override
+        public boolean hasMore() {
+            return false;
+        }
+        //        @Override
 //        public View getView(int position, View converview, ViewGroup viewGroup) {
 //            ViewHolder holder;
 //            if(converview==null){
