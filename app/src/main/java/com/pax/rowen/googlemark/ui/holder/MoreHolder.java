@@ -1,9 +1,7 @@
 package com.pax.rowen.googlemark.ui.holder;
-
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import com.pax.rowen.googlemark.R;
 import com.pax.rowen.googlemark.utils.UIUtils;
 
@@ -30,14 +28,11 @@ public class MoreHolder extends BaseHolder<Integer>{
         setData(hasMore ? STATE_MORE_MORE : STATE_MORE_NONE);//setData结束后一定会调refreshView
     }
 
-
     @Override
     public View initView() {
         View view = UIUtils.inflate(R.layout.list_item_more);
-
         llLoadMore = (LinearLayout) view.findViewById(R.id.ll_load_more);
         tvLoadError = (TextView) view.findViewById(R.id.tv_load_error);
-
         return view;
     }
 
@@ -63,8 +58,5 @@ public class MoreHolder extends BaseHolder<Integer>{
             default:
                 break;
         }
-
-
-
     }
 }

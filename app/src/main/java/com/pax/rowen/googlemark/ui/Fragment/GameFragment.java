@@ -5,8 +5,9 @@ import android.view.View;
 import com.pax.rowen.googlemark.ui.view.LoadingPage;
 
 public class GameFragment extends BaseFragment {
+
     @Override
-    public View onCreatSuccessView() {
+    public View onCreateSuccessView() {
         return null;
     }
 

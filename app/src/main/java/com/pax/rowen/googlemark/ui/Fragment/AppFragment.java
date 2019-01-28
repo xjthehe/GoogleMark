@@ -7,8 +7,9 @@ import com.pax.rowen.googlemark.ui.view.LoadingPage;
 public class AppFragment extends BaseFragment {
 
     //只有成功才走此方法
+
     @Override
-    public View onCreatSuccessView() {
+    public View onCreateSuccessView() {
         return null;
     }
 

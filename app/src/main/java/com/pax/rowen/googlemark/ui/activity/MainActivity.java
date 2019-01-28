@@ -1,5 +1,6 @@
 package com.pax.rowen.googlemark.ui.activity;
 
+import android.content.pm.ActivityInfo;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -43,7 +44,7 @@ public class MainActivity extends BaseActivity {
             public void onPageSelected(int position) {
                 BaseFragment baseFragment=FragmentFactory.creatFragment(position);
                 //实际还是loadingpage的loaddate.
-                baseFragment.loadDate();
+                baseFragment.loadData();
             }
 
             @Override
@@ -82,4 +83,14 @@ public class MainActivity extends BaseActivity {
     }
 
 
+    @Override
+    protected void onResume() {
+        /**
+         * 设置为竖屏
+         */
+        if(getRequestedOrientation()!= ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+        super.onResume();
+    }
 }
